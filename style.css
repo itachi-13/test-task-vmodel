@@ -601,4 +601,105 @@ main .influencers p {
     .header .right {
         height: 300px;
     }
+
+    section.pictures {
+        flex-wrap: wrap;
+    }
+    
+    section.pictures div {
+        width: 40%;
+    }
+
+    main h2 {
+        font-size: 54px;
+        margin-top: initial;
+    }
+
+    main h2 + p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-elements {
+        display: none;
+    }
+
+    .header {
+        text-align: left;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .header h2 {
+        font-size: 34px;
+        line-height: 38px;
+        width: 300px;
+    }
+
+    .header h2 + p {
+        width: 300px;
+    }
+
+    .hire-top-model {
+        width: 300px;
+    }
+
+    .header .photo {
+        height: 220px;
+        grid-column: 1 / 3;
+    }
+
+    .header .photo img {
+        width: 100%;
+    }
+    
+    .header .right {
+        grid-column: 1 / 3;
+        height: 220px;
+    }
+
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands > div {
+        width: 40%;
+    }
+
+    section.pictures {
+        gap: 5px;
+    }
+
+    section.pictures div {
+        width: 48%;
+    }
+
+    section.pictures img {
+        object-position: 30% 0;
+    }
+
+    main h2 {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    main h2 + p {
+        font-size: 18px;
+    }
+
+    .grid-photos {
+        grid-template-columns: 1fr;
+    }
+    
+    main .information {
+        width: 100%;
+    }
+
+    @media (max-width: 360px) {
+        body {
+            width: 360px;
+        }
+    }
 }
