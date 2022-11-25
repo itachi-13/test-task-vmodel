@@ -7,7 +7,6 @@
 }
 
 header {
-    height: 599px;
     background: #FBEBEA;
     padding: 20px 32px 32px;
 }
@@ -343,9 +342,14 @@ nav .right {
     flex: none;
 }
 
-.header .photo img {
-    width: 335px;
+.header .photo {
+    /* width: 335px; */
     height: 420px;
+}
+
+.header .photo img {
+    object-fit: cover;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -480,4 +484,19 @@ main .influencers p {
     text-align: center;
     color: #423130;
     width: 235px;
+}
+
+@media (max-width: 1400px) {
+    nav .right {
+        display: none;
+    }
+
+    .header {
+        grid-template-columns: 1fr 1fr;
+        height: initial;
+    }
+
+    .header .left {
+        grid-column: 1 / 3;
+    }
 }
