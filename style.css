@@ -381,10 +381,6 @@ nav .right {
     align-items: center;
 }
 
-.brands img {
-    max-width: 100%;
-}
-
 .brands p {
     width: 404px;
     height: 58px;    
@@ -394,6 +390,10 @@ nav .right {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+}
+
+.brands img {
+    max-width: 100%;
 }
 
 section.pictures {
@@ -523,6 +523,30 @@ main .influencers p {
     .header .right {
         height: 358px;
     }
+
+    .brands {
+        height: initial;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .brands div:first-child {
+        grid-column: 1 / 6;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .brands p {
+        width: initial;
+        height: initial;    
+        
+        font-size: 24px;
+    }
+    
+    .brands img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -554,5 +578,27 @@ main .influencers p {
     .header .right {
         grid-column: 2 / 3;
         height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-elements .photographers, .nav-elements .pets {
+        display: none;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header .left {
+        grid-column: 1 / 3;
+    }
+
+    .hire-top-model {
+        width: 100%;
+    }
+
+    .header .right {
+        height: 300px;
     }
 }
